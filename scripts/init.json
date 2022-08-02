@@ -1,0 +1,21 @@
+{
+    "rg_name": "JenkinsGrp3",
+    "vnet_name": "VNet",
+    "vm_name": "VMApp",
+    "bastion_name": "JenkinsBastion",
+    "bastion_nic_name": "NicBastion",
+    "bastion_subnet_name": "AzureBastionSubnet",
+    "appli_subnet_name": "JenkinsAppliSubnet",
+    "appli_nic_name": "JenkinsIp",
+    "admin_user_name": "alain",
+    "key_path": "C:\\Users\\utilisateur\\.ssh\\id_rsa",
+    "auth_type": "ssh-key",
+
+    "location": "westeurope",
+    "vnet_prefix": "10.0.0.0/16",
+    "bastion_subnet_prefix": "10.0.3.0/24",
+    "appli_subnet_prefix": "10.0.33.0/24",
+    "bastion_ip":"10.0.3.1",
+    "sku": "standard"
+
+}
