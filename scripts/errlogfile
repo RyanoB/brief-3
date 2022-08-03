@@ -1,4 +1,0 @@
-WARNING: [Coming breaking change] In the coming release, the default behavior will be changed as follows when sku is Standard and zone is not provided: For zonal regions, you will get a zone-redundant IP indicated by zones:["1","2","3"]; For non-zonal regions, you will get a non zone-redundant IP indicated by zones:null.
-WARNING: Please note that the default public IP used for creation will be changed from Basic to Standard in the future.
-WARNING: It is recommended to use parameter "--public-ip-sku Standard" to create new VM with Standard public IP. Please note that the default public IP used for VM creation will be changed from Basic to Standard in the future.
-WARNING: Command group 'network bastion' is in preview and under development. Reference and support levels: https://aka.ms/CLI_refstatus
