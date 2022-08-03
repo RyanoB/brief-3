@@ -10,6 +10,9 @@
     "admin_user_name": "alain",
     "key_path": "C:\\Users\\utilisateur\\.ssh\\id_rsa",
     "auth_type": "ssh-key",
+    "nsg_name": "port_8080",
+    "app_disk_name": "AppDiskData2",
+    "fqdn_name": "fqdntest",
 
     "location": "westeurope",
     "vnet_prefix": "10.0.0.0/16",
