@@ -1,5 +1,5 @@
 {
-    "rg_name": "Jenkins",
+    "rg_name": "JenkinsTest20",
     "vnet_name": "VNet",
     "vm_name": "VMApp",
     "bastion_name": "JenkinsBastion",
@@ -20,5 +20,5 @@
 
     "nsg_name": "port_8080",
     "app_disk_name": "AppDiskData2",
-    "fqdn_name": "fqdntest01"
+    "fqdn_name": "jenkinstest20"
 }

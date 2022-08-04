@@ -1,10 +1,21 @@
 import json
 import subprocess
+from datetime import datetime
+
+log_file = open("./logs/infrastructure.log","a")
 
 def execute_command(command):
-    callback = subprocess.run(command, shell=True)
+    # Prod
+    callback = subprocess.run(command, stdout=log_file, stderr=log_file, shell=True)
+
+    # Dev
+    # callback = subprocess.run(command, stdout=log_file, stdout=log_file, shell=True)
 
     result = { "output_str": callback.args, "exit_code": callback.returncode }
+
+    if (callback.returncode != 0):
+        print("Impossible d'éxécuter : " + callback.args)
+        exit()
 
     return result
 
@@ -15,6 +26,8 @@ with open("./config.json", "r") as file:
     config = json.load(file)
 
 def run():
+    log_file.write("\n=== SCRIPT 'infratructure.py' ENDED AT " + str(datetime.now()) + " ===\n")
+
     # 1. Création ResourceGroup
     execute_command("az group create --name " + config["rg_name"] + " --location " + config["location"])
 
